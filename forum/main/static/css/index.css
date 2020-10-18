@@ -328,6 +328,7 @@ input::placeholder {
 
 
 @media(max-width:767px) {
+
     .text {
         font-size: 1.4rem;
         width: 75%;
@@ -406,6 +407,10 @@ input::placeholder {
         top: 70%;
     }
 
+    .search-bar {
+        background-size: 5%;
+    }
+
     .drop-down {
 
         background-size: 10%;
@@ -481,6 +486,10 @@ input::placeholder {
         font-size: 2rem;
         padding-left: 20px;
 
+    }
+
+    .search-bar {
+        background-size: 5%;
     }
 
     .container-bottom {
