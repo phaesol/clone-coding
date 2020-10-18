@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <link rel="shortcut icon" href="{% static 'css/media/logo2.png' %}" />
+    <title>Forum</title>
+</head>
+<body>
+    <nav class="nav-bar">
+        
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">피드</a>
+    <a href="#">스토리</a>
+    <a href="#">스킨</a>
+    <a href="#">포럼</a>
+    <a href="#">글쓰기</a>
+  </div>
+  
+  
+  <span style="font-size:20px;cursor:pointer" onclick="openNav()" class="mobile-menu">&#9776;</span>
+        <div class="logo-image cursor">
+            <img src="{% static 'css/media/logo2.png' %}" >
+        </div>
+        <div class="nav-text">
+            <a href="#" class="nav-list">피드</a>
+            <a href="#" class="nav-list">스토리</a>
+            <a href="#" class="nav-list">스킨</a>
+            <a href="#" class="nav-list">포럼</a>
+        </div>
+        <span class="bell cursor">
+            <img src="{% static 'css/media/bell2.png' %}" >
+        </span>
+        <span class="profile cursor">
+
+        </span>
+  
+    </nav>
+    <div class="container-top">
+        <div class="background-image">
+            <img src="{% static 'css/media/purple.jpg' %}" >
+        </div>
+        <div class="text">
+            <strong>Forum</strong>
+            <br>티스토리에 대한 이야기를 자유롭게 나눠보세요
+        </div>
+        
+            
+       
+        <div class="search">
+            <input type="text" placeholder="제목" class="drop-down">
+           <input type="text" placeholder="검색어를 입력하세요." class="search-bar">
+           
+        </div>
+    </div>
+    <div class="container-bottom">
+        <nav class="nav-bar-bottom">
+           
+            <div class="nav-text-bottom">
+                <a href="#" class="nav-list-bottom"><strong>전체</strong></a>
+                <a href="#" class="nav-list-bottom">블로그 운영팁</a>
+                <a href="#" class="nav-list-bottom">블로그 소개</a>
+                <a href="#" class="nav-list-bottom">스킨</a>
+                <a href="#" class="nav-list-bottom">기타</a>
+                
+            </div>
+            
+            <div class="write cursor">
+                <button>글쓰기</button>
+            </div>
+        </nav>
+        <div class="board">
+            <img src="{% static 'css/media/korin.png' %}" >
+            <div class="content">
+                <div class="name">
+                    <div class="left">코린코린ㆍ 2020.10.18 ㆍ 기타</div>
+                    <div class="right">조회수 555 댓글 55</div>
+                </div>
+                <div class="title">코린코린</div>
+                으ㅡ아아아아으드드드드듣다다닫<br>
+                두줄로 쓰기
+            </div>
+        </div>
+    </div>
+
+           
+    </div>
+    
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+   
+</body>
+</html>

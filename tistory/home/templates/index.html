@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <link rel="shortcut icon" href="static/css/media/logo.png" />
+    <title>home</title>
+</head>
+
+<body>
+
+    <ul class="nav-bar">
+
+        <div class="logo-image cursor">
+            <img src="{% static 'css/media/logo.png' %}" width="50" height="50">
+        </div>
+        <div class="nav-text">
+            <li class="nav-list">피드</li>
+            <li class="nav-list">스토리</li>
+            <li class="nav-list">스킨</li>
+            <li class="nav-list">포럼</li>
+        </div>
+        <span class="bell cursor">
+            <img src="{% static 'css/media/bell.png' %}" width="30" height="30">
+        </span>
+        <span class="profile cursor">
+
+        </span>
+    </ul>
+
+
+
+
+    <div class="container">
+        <span class="arrow-left cursor">
+            <img src="{% static 'css/media/arrow.png' %}" width="100%" height="100%">
+        </span>
+        <div class="text-wrapper ">
+            <div class="text">
+                티스토리 계정이
+                <br><b>카카오계정</b> 기반으로
+                <br>변경됩니다.
+            </div>
+
+
+        </div>
+        <button class="go-btn">자세히보기</button>
+
+        <div class="img-wrapper">
+            <div class="circle">
+                <div class="circle1">
+
+                </div>
+                <div class="circle2">
+
+                </div>
+                <div class="circle3">
+
+                </div>
+            </div>
+            <div class="kakao">
+
+            </div>
+            <div class="tistory">
+
+            </div>
+        </div>
+        <span class="arrow-right cursor">
+            <img src="{% static 'css/media/arrow.png' %}" width="100%" height="100%">
+        </span>
+
+    </div>
+</body>
+
+
+</html>
