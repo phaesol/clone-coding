@@ -1,6 +1,7 @@
-html {
-
-    min-height: 551px;
+html,
+body {
+    min-width: 320px;
+    min-height: 571px;
     font-size: 10px;
     margin: 0;
     padding: 0;
@@ -8,13 +9,14 @@ html {
 }
 
 body {
-    min-width: 320px;
+
     width: 100%;
-    margin: 0;
-    padding: 0;
     font-size: 10px;
 }
 
+
+
+/* nav-bar */
 
 .logo-image img {
     width: 50px;
@@ -30,7 +32,7 @@ body {
     cursor: pointer;
 }
 
-.nav-text {
+.nav-item {
 
     display: flex;
     list-style: none;
@@ -98,7 +100,10 @@ body {
     margin: 50px 80px 0 30px;
 }
 
-.container-top {
+/* section top */
+
+
+.section-top {
     position: relative;
     z-index: 1;
     width: 100%;
@@ -106,12 +111,12 @@ body {
 
 }
 
-.background-image {
+.cover-image {
     width: 100%;
     height: 500px;
 }
 
-.background-image img {
+.cover-image img {
 
     width: 100%;
     height: 500px;
@@ -131,22 +136,30 @@ body {
     top: 60%;
     display: flex;
     width: 60%;
-    height: 11%;
+    height: 12%;
     left: 20%;
 }
 
-.drop-down {
-    width: 20%;
+#drop-down {
+    width: 15%;
     height: 100%;
-    background-image: url('media/down-arrow.png');
-    background-size: 7%;
-    background-repeat: no-repeat;
-    background-position: 60% center;
+    font-size: 1.5rem;
     padding-left: 20px;
     border: none;
     border-right: 1px solid rgb(180, 180, 180);
     border-radius: 5px 0 0 5px;
 
+}
+
+#drop-down:hover {
+    text-decoration: underline;
+    outline: none;
+}
+
+
+
+#drop-down:focus {
+    outline: none;
 }
 
 input::placeholder {
@@ -155,19 +168,11 @@ input::placeholder {
 
 }
 
-.container-bottom {
-    margin-left: 20%;
-    width: 65%;
-    height: 50%;
-    align-items: center;
-}
 
 .search-bar {
-    /* width: 70rem;
-    height: 5rem; */
+
     width: 80%;
-    height: 100%;
-    border: 1px solid black;
+    height: 97%;
     background-image: url('media/search.png');
     background-size: 3%;
     background-repeat: no-repeat;
@@ -177,19 +182,7 @@ input::placeholder {
     padding-left: 20px;
 }
 
-
-.nav-text-bottom {
-    display: flex;
-    list-style: none;
-    padding-top: 60px;
-    font-size: 1.3rem;
-    cursor: pointer;
-
-
-
-}
-
-
+/* bottom-nav */
 
 
 
@@ -209,7 +202,6 @@ input::placeholder {
 .nav-bar-bottom {
 
     display: flex;
-    /* margin-left: 300px; */
     align-items: center;
     cursor: pointer;
     height: 120px;
@@ -218,12 +210,12 @@ input::placeholder {
 }
 
 .write {
-
+    align-self: center;
     width: 10rem;
     height: 3.5rem;
     text-align: center;
-    padding-top: 60px;
     margin-left: auto;
+
 
 }
 
@@ -233,62 +225,94 @@ input::placeholder {
     color: rgb(255, 255, 255);
     border: none;
     text-align: center;
-
     width: 10rem;
     height: 3.5rem;
     font-size: 1.5rem;
-
     background-color: rgb(0, 0, 0);
     border-radius: 2rem;
 
 
 }
 
+/*section-bottom*/
+
+.section-bottom {
+    margin: 0 auto;
+    width: 65%;
+
+    height: 50%;
+    align-items: center;
+}
 
 .board {
-    display: flex;
 
-    margin-top: 20px;
+    width: 100%;
+}
+
+.board-wrapper {
+
+    display: flex;
+    margin: 5% auto;
+    border-bottom: 1px solid gray;
+
+
+}
+
+
+.board-wrapper img {
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+
+}
+
+
+.board-item {
+    width: 90%;
 }
 
 
 .right {
+    color: gray;
     margin-left: auto;
 }
 
-.board {
-    width: 100%;
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
-}
 
-.board img {
-    width: 10%;
-    height: 10%;
-    margin-top: 20px;
-}
 
-.name {
+.nickname {
     width: 95%;
     display: flex;
-    margin-top: 10px;
+
     font-size: 1.5rem;
 }
 
 .title {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    padding-top: 10px;
     padding-bottom: 10px;
 }
 
+
+
 .content {
-    width: 90%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    width: 80%;
     font-size: 2rem;
-    display: flex;
-    flex-direction: column;
+    padding-bottom: 5%;
+    color: gray;
 }
 
+
+
+
+
+.nav-wrapper {
+    display: flex;
+    border-bottom: 1px solid gray;
+
+}
+
+
+/*mobile-side-nav */
 
 .sidenav {
     display: none;
@@ -326,7 +350,6 @@ input::placeholder {
 }
 
 
-
 @media(max-width:767px) {
 
     .text {
@@ -344,17 +367,17 @@ input::placeholder {
 
     }
 
-    .container-top {
+    .section-top {
         width: 100%;
         height: 60%;
     }
 
-    .background-image {
+    .cover-image {
         width: 100%;
         height: 60%;
     }
 
-    .background-image img {
+    .cover-image img {
         width: 100%;
         height: 60%;
     }
@@ -366,7 +389,7 @@ input::placeholder {
 
     }
 
-    .nav-text {
+    .nav-item {
         flex: none;
         padding-top: 40px;
     }
@@ -439,12 +462,12 @@ input::placeholder {
 
 
 
-    .container-bottom {
+    .section-bottom {
         width: 85%;
-        margin-left: 10%;
+        margin: 0 auto;
     }
 
-    .name {
+    .nickname {
         font-size: 1rem;
         margin-top: 0;
     }
@@ -455,7 +478,7 @@ input::placeholder {
     }
 
 
-    .content {
+    .board-item {
         font-size: 1.2rem;
     }
 
@@ -492,8 +515,8 @@ input::placeholder {
         background-size: 5%;
     }
 
-    .container-bottom {
+    .section-bottom {
         width: 75%;
-        margin-left: 10%;
+        margin: 0 auto;
     }
 }

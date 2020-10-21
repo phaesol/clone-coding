@@ -20,28 +20,27 @@
     <a href="#">글쓰기</a>
   </div>
   
-  
   <span style="font-size:20px;cursor:pointer" onclick="openNav()" class="mobile-menu">&#9776;</span>
         <div class="logo-image cursor">
-            <img src="{% static 'css/media/logo2.png' %}" >
+            <img src="{% static 'css/media/logo2.png' %}" alt="티스토리 로고 이미지" title="Tistory" >
         </div>
-        <div class="nav-text">
+        <div class="nav-item">
             <a href="#" class="nav-list">피드</a>
             <a href="#" class="nav-list">스토리</a>
             <a href="#" class="nav-list">스킨</a>
             <a href="#" class="nav-list">포럼</a>
         </div>
         <span class="bell cursor">
-            <img src="{% static 'css/media/bell2.png' %}" >
+            <img src="{% static 'css/media/bell2.png' %}" alt="읽지 않은 알림" title="unread notifications"  >
         </span>
         <span class="profile cursor">
 
         </span>
   
     </nav>
-    <div class="container-top">
-        <div class="background-image">
-            <img src="{% static 'css/media/purple.jpg' %}" >
+    <div class="section-top">
+        <div class="cover-image">
+            <img src="{% static 'css/media/purple.jpg' %}" alt="배경 이미지" title="cover-image" >
         </div>
         <div class="text">
             <strong>Forum</strong>
@@ -51,40 +50,101 @@
             
        
         <div class="search">
-            <input type="text" placeholder="제목" class="drop-down">
+            <label for="select-category"></label>
+                <select name="category" id="drop-down">
+                   
+                    <option value="all">전체</option>
+                    <option value="title" selected="selected">제목</option>
+                    <option value="writer">작성자</option>
+                
+                </select>
            <input type="text" placeholder="검색어를 입력하세요." class="search-bar">
            
         </div>
     </div>
-    <div class="container-bottom">
+    <div class="section-bottom">
+        <div class="nav-wrapper">  
         <nav class="nav-bar-bottom">
            
-            <div class="nav-text-bottom">
                 <a href="#" class="nav-list-bottom"><strong>전체</strong></a>
                 <a href="#" class="nav-list-bottom">블로그 운영팁</a>
                 <a href="#" class="nav-list-bottom">블로그 소개</a>
                 <a href="#" class="nav-list-bottom">스킨</a>
                 <a href="#" class="nav-list-bottom">기타</a>
                 
-            </div>
-            
-            <div class="write cursor">
-                <button>글쓰기</button>
-            </div>
         </nav>
-        <div class="board">
-            <img src="{% static 'css/media/korin.png' %}" >
-            <div class="content">
-                <div class="name">
-                    <div class="left">코린코린ㆍ 2020.10.18 ㆍ 기타</div>
-                    <div class="right">조회수 555 댓글 55</div>
-                </div>
-                <div class="title">코린코린</div>
-                으ㅡ아아아아으드드드드듣다다닫<br>
-                두줄로 쓰기
-            </div>
+ 
+        <div class="write cursor">
+            <button>글쓰기</button>
         </div>
     </div>
+
+        <div class="board">
+            <div class="board-wrapper">
+                <img src="{% static 'css/media/korin.png' %}" alt="글쓴이 프로필 이미지" title="writer-image">
+                <div class="board-item">
+               
+                    <div class="nickname">
+                        <div class="left">코린코린ㆍ 2020.10.18 ㆍ 기타</div>
+                        <div class="right">조회수 555 댓글 55</div>
+                    </div>
+                    <div class="title">코린코린</div>
+                    <div class="content">으ㅡ아아아아으드드드드듣다닫 크기에 맞춰서 자동 줄바꿈하기</div>
+                
+                </div>
+               
+            </div>
+
+            <div class="board-wrapper">
+                <img src="{% static 'css/media/korin.png' %}" alt="글쓴이 프로필 이미지" title="writer-image">
+                <div class="board-item">
+               
+                    <div class="nickname">
+                        <div class="left">코린코린ㆍ 2020.10.18 ㆍ 기타</div>
+                        <div class="right">조회수 555 댓글 55</div>
+                    </div>
+                    <div class="title">코린코린</div>
+                    <div class="content">두번째글ㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹ</div>
+                
+                </div>
+            </div>
+
+            <div class="board-wrapper">
+                <img src="{% static 'css/media/korin.png' %}" alt="글쓴이 프로필 이미지" title="writer-image">
+                <div class="board-item">
+               
+                    <div class="nickname">
+                        <div class="left">코린코린ㆍ 2020.10.18 ㆍ 기타</div>
+                        <div class="right">조회수 555 댓글 55</div>
+                    </div>
+                    <div class="title">코린코린</div>
+                    <div class="content">세번째 글ㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹ</div>
+                
+                </div>
+            </div>
+
+            <div class="board-wrapper">
+                <img src="{% static 'css/media/korin.png' %}" alt="글쓴이 프로필 이미지" title="writer-image">
+                <div class="board-item">
+               
+                    <div class="nickname">
+                        <div class="left">코린코린ㆍ 2020.10.18 ㆍ 기타</div>
+                        <div class="right">조회수 555 댓글 55</div>
+                    </div>
+                    <div class="title">코린코린</div>
+                    <div class="content">네번째 글ㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹ</div>
+                
+                </div>
+            </div>
+                
+                
+                
+               
+                
+                
+            </div>
+        </div>
+   
 
            
     </div>
