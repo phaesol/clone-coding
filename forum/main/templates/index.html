@@ -143,19 +143,75 @@
                     <div class="content">네번째 글ㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹ</div>
                 
                 </div>
+
+                
             </div>
-                
-                
-                
+
+
+            <form>
+              
+                    <div class="radio-object">
+                      
+                        <p class="radio-text">분류 선택</p>
+                        <div class="radio-item">
+                         
+                          <input type="radio" name="category" id="tip" value="tip" checked>
+                          <label for="tip">블로그 운영팁</label>
+                        </div>
+                        <div class="radio-item">
+                          <input type="radio" name="category" id="introduce" value="introduce">
+                          <label for="introduce">블로그 소개</label>
+                        </div>
+                        <div class="radio-item">
+                          <input type="radio" name="category" id="skin" value="skin">
+                          <label for="skin">스킨</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" name="category" id="others" value="others">
+                            <label for="others">기타</label>
+                          </div>
+
+                    </div>
                
+
+                    
+                    <div class="form-title flex">
+                        <label for="title">제목</label>
+                        <input type="text" id="title" placeholder="제목을 입력하세요."/>
+                        <p class="word-count">0/30</p>
+                    </div>
+                   
+                    <div class="form-content flex">
+                        <label for="content">내용</label>
+                        <textarea id="content" placeholder="내용을 입력하세요."></textarea>
+                        <p class="word-count">0/1000</p>
+                    </div>
+                    
+                    <div class="form-file flex">
+                        <label for="file">파일 첨부</label>
+                        <input type="file" id="file" name="file" accept="image/png, image/jpeg"/>
+                    </div>
+                   
                 
-                
+              
+            </form>
+            <div class="btn-wrapper">
+                <div class="button">
+                    <button type="submit">취소</button>
+                </div>
+                <div class="button">
+                    <button type="submit">등록</button>
+                </div>
             </div>
+                
         </div>
    
 
            
     </div>
+            </div>
+          
+
     
     <script>
 
