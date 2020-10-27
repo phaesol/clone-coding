@@ -14,7 +14,9 @@ body {
     font-size: 10px;
 }
 
-
+* {
+    outline: none;
+}
 
 /* nav-bar */
 
@@ -359,7 +361,7 @@ form {
     height: 400px;
     border: 1px solid #cfcfcf;
     border-radius: 2px;
-    margin: 20% auto;
+    margin: 20% auto 0;
 
 }
 
@@ -424,6 +426,43 @@ form {
     color: #817e7e;
     margin-right: 5%;
 }
+
+/*btn*/
+
+.btn-wrapper {
+    display: flex;
+    width: 100%;
+    margin: 10% 0;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn1,
+.btn2 {
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 40px;
+    width: 120px;
+    height: 45px;
+    margin-left: 10px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.btn1:hover {
+    background-color: rgb(253, 92, 92);
+    color: white;
+    border: none;
+}
+
+.btn2 {
+    background-color: rgb(194, 194, 194);
+    color: white;
+
+}
+
+
+
+
 
 
 @media(max-width:767px) {
