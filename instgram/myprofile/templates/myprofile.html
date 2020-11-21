@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내 프로필</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/myprofile.css' %}">
+</head>
+<body>
+    <!-- 오픈클래스 준비 겸 나도 같이 따라 쳐보기  -->
+    <div class="insta-container">
+        <!-- 네브바 헤딩 부분 -->
+        <div class="nav-bar">
+            <img src="{% static 'media/인스타 로고.png' %}" class="insta-logo" title="instagram" alt="instagram logo">
+            <input type="text" placeholder="검색" class="search">
+            <div class="account">
+                <div class ="login">로그인</div>
+                <div class ="signup">가입하기</div>
+            </div>
+        </div>
+
+        <div class="user">
+            <div class="profile-img">
+                <img src="{% static 'media/부산대 멋사 인스타.png' %}" class="user-img" title="profile" alt="profile-image">
+            </div>
+
+            <div class="user-info">
+                <div class="user-name">
+                    Pnulikelion
+                    <input type="button" value="팔로우" class="follow-btn">
+                </div>
+                <div class="info-item">
+                    게시물 <b>15</b>
+                    팔로워 <b>60</b>
+                    팔로우 <b>51</b>
+                    
+                </div>
+
+                <div class="content">
+                    <b>부산대학교 멋쟁이처럼</b><br>
+                    🦁부산의 사자들🦁<br>
+                    오픈클래스 환영합니다<br>
+                    <a href="https://www.instagram.com/_haesolllll_/?hl=ko">_haesolllll_</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="post">
+            <div class="post-nav">
+                <div class="nav-item">🎨게시물</div>
+                <div class="nav-item"> 🧨태그됨</div>
+            </div>
+        </div>
+
+        <div class="photo">
+            <img src="{% static 'media/사진7.jpg' %}"  class="post-img">
+            <img src="{% static 'media/사진8.png' %}"  class="post-img">
+            <img src="{% static 'media/사진9.jpg' %}" class="post-img">
+            <img src="{% static 'media/사진10.jpg' %}"  class="post-img">
+        </div>
+    </div>
+
+   
+    
+</body>
+</html>

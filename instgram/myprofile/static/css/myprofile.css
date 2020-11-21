@@ -1,0 +1,131 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans KR", sans-serif !important;
+    
+}
+
+*{
+    text-decoration: none;
+}
+
+
+.insta-container{
+    border : 1px solid black;
+    width: 700px;
+    height: 100%;
+    margin : 0 auto;
+    background-color: #FAFAFA;
+}
+
+/* 네브바 부분 */
+
+.nav-bar{
+    border-bottom: 1px solid rgb(212,205,205);
+    background-color: white;
+}
+.insta-logo{
+    width: 150px;
+    height: 50px;
+    margin-left :20px;
+}
+
+
+.account{
+    float: right;
+}
+
+.login, .signup{
+    display: inline-block;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.login{
+    background-color: skyblue;
+    color: white;
+    border-radius: 10px;
+    padding: 7px;
+   
+}
+
+.search{
+    position: relative;
+    left: 100px;
+    bottom: 20px;
+    border: 1px solid #e7E5E5;
+    text-align: center;
+}
+
+/* user 부분 */
+
+
+.user{
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    height: 40%;
+    align-items: center;
+}
+
+.user-img{
+    width: 250px;
+    height: 250px;
+}
+
+
+.user-info{
+    margin-left: 50px;
+    margin-top: -30px;
+    
+}
+
+.user-name{
+    font-size: x-large;
+}
+
+.info-item{
+    margin-top: 10px;
+}
+
+.content{
+    margin-top: 10px;
+}
+
+.follow-btn{
+    background-color: skyblue;
+    color: white;
+    border-style: none;
+    border-radius: 3px;
+    padding: 5px;
+    margin-left: 5px;
+  
+}
+
+.post-nav{
+    width: 100%;
+    height: 50px;
+    border-top:1px solid #e7E5E5 ; 
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nav-item+.nav-item{
+    margin-left: 40px;
+}
+
+.photo{
+    margin-top: 20px;
+}
+.post-img{
+    display: inline-block;
+    width: 30%;
+    height: 200px;
+    margin:10px;
+   
+    
+}
